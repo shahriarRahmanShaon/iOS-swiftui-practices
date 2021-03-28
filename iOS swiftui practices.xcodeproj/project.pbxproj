@@ -11,6 +11,8 @@
 		007F81AA260F777E00910B9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F81A9260F777E00910B9A /* ContentView.swift */; };
 		007F81AC260F778000910B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007F81AB260F778000910B9A /* Assets.xcassets */; };
 		007F81AF260F778000910B9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007F81AE260F778000910B9A /* Preview Assets.xcassets */; };
+		007F81B82610972F00910B9A /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F81B72610972F00910B9A /* model.swift */; };
+		007F81BB2610974A00910B9A /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007F81BA2610974A00910B9A /* viewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		007F81AB260F778000910B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007F81AE260F778000910B9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		007F81B0260F778000910B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007F81B72610972F00910B9A /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		007F81BA2610974A00910B9A /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				007F81A7260F777E00910B9A /* iOS_swiftui_practicesApp.swift */,
 				007F81A9260F777E00910B9A /* ContentView.swift */,
+				007F81BA2610974A00910B9A /* viewModel.swift */,
+				007F81B72610972F00910B9A /* model.swift */,
 				007F81AB260F778000910B9A /* Assets.xcassets */,
 				007F81B0260F778000910B9A /* Info.plist */,
 				007F81AD260F778000910B9A /* Preview Content */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				007F81AA260F777E00910B9A /* ContentView.swift in Sources */,
+				007F81B82610972F00910B9A /* model.swift in Sources */,
+				007F81BB2610974A00910B9A /* viewModel.swift in Sources */,
 				007F81A8260F777E00910B9A /* iOS_swiftui_practicesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
