@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct model : Decodable {
-    let coord : Coordinator
+struct model : Codable {
+    var coord : Coordinator
 }
-struct Coordinator : Decodable {
-    let lon, lat : Double
+struct Coordinator : Codable {
+    var lon : Double
+    var lat : Double
 }

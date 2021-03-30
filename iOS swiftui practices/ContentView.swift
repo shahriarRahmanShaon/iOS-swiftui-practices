@@ -9,19 +9,21 @@ import SwiftUI
 
 
 struct ContentView: View {
+    @StateObject var ViewModel = viewModel()
     @State var place = "dhaka"
-    @ObservedObject var ViewModel = viewModel()
     
     var body: some View{
         VStack {
             TextField("place name...", text: $place)
             Text("start networking")
                 .onTapGesture {
-                    let url =
-                        URL( string:
-                                "https://api.openweathermap.org/data/2.5/weather?q=\(place)&appid=0e467e5c6beceddf2be0be537b297025")
-                    ViewModel.networking(url!)
+                   // ViewModel.networkingWith_UrlSession(place)
+                    ViewModel.networkingWith_combine(place)
+                    
                 }
+            Text(String(ViewModel.mainModel?.coord.lon ?? 0.0)) // by making that optional i have to use everywhere forced unwraped version of that optional
+           
+            
         }
     }
     
